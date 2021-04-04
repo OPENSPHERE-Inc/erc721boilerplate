@@ -48,8 +48,8 @@ WALLET_PRIVATE_KEY=Replace your private key
 - `MFT` トークンのシンボル
 - `http://www.url.to/metadata/` json ファイルの格納場所
 
-メタデータの json ファイルを作成して、外部からアクセス可能な Web ストレージにアップロードしておくこと。
-同じく、画像もアップロードしてください。
+メタデータの json ファイルを作成して、外部からアクセス可能な Web ストレージにアップロードしてください。
+また、同じく画像もアップロードしてください。
 
 **json ファイルの一例**
 
@@ -61,24 +61,24 @@ WALLET_PRIVATE_KEY=Replace your private key
 }
 ```
 
-- `name` アイテムの名前
-- `description` アイテムの説明
-- `image` アイテムの画像ファイルURL
+- `name` 名前
+- `description` 説明
+- `image` 画像ファイルURL
 
 
-### 2.3. コンパイル
+## 3. コンパイル
 
 ```shell
 $ yarn compile
 ```
 
-### 2.4. 単体テスト
+## 4. 単体テスト
 
 ```shell
 $ yarn test
 ```
 
-### 2.5. デプロイ
+## 5. デプロイ
 
 ```shell
 $ yarn deploy
