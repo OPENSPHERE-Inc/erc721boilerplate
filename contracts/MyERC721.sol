@@ -12,14 +12,14 @@ contract ProxyRegistry {
 contract MyERC721 is ERC721PresetMinterPauserAutoId {
     address proxyRegistryAddress;
 
-	constructor(
+    constructor(
         address _proxyRegistryAddress,
-		string memory _name,
-		string memory _symbol,
-		string memory _baseTokenURI
-	)
-		ERC721PresetMinterPauserAutoId(_name, _symbol, _baseTokenURI)
-	{
+        string memory _name,
+        string memory _symbol,
+        string memory _baseTokenURI
+    )
+        ERC721PresetMinterPauserAutoId(_name, _symbol, _baseTokenURI)
+    {
         proxyRegistryAddress = _proxyRegistryAddress;
     }
 
