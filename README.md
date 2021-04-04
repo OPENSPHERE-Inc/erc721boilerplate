@@ -4,6 +4,7 @@
 
 ```shell
 git clone git@github.com:OPENSPHERE-Inc/erc721boilerplate.git
+cd erc721boilerplate
 yarn install
 mv dot.env .env
 ```
