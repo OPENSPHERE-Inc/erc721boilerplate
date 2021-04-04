@@ -1,0 +1,7 @@
+.idea
+node_modules
+artifacts
+cache
+typechain
+.env
+
