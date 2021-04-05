@@ -23,6 +23,11 @@ WALLET_PRIVATE_KEY=Replace your private key
 #PROXY_REGISTRY_ADDRESS=0xa5409ec958c83c3f309868babaca7c86dcb077c1
 #NODE_URL=Replace your API URL
 #WALLET_PRIVATE_KEY=Replace your private key
+
+# Token metadata
+TOKEN_NAME=My special item
+TOKEN_SYMBOL=MSI
+TOKEN_BASE_URI=http://www.url.to/metadata/
 ```
 
 `Test network` にテストの設定、`Mainnet` に本番の設定を入れます。 
@@ -33,20 +38,11 @@ WALLET_PRIVATE_KEY=Replace your private key
   CREATE APP を使って、「Network」にテストの場合は「Rinkeby」、本番の場合は「Mainnet」を選択してノードを作成してください。
   APP ダッシュボードから VIEW KEY → HTTP の URL をコピー＆ペーストすればOKです。
 - `WALLET_PRIVATE_KEY` NFTのオーナーとなるアドレスの秘密鍵を指定します。デプロイ時のガス代もこのアドレスから支払われます。
+- `TOKEN_NAME` トークンの名前
+- `TOKEN_SYMBOL` トークンのシンボル
+- `TOKEN_BASE_URI` json ファイルの格納場所
 
-
-### 2.2. `deploy/MyERC721.ts` を編集
-
-```typescript
-    const MyERC721 = await deploy("MyERC721", {
-        from: deployer,
-        args: [process.env.PROXY_REGISTRY_ADDRESS, 'My special item', 'MSI', 'http://www.url.to/metadata/'],
-    })
-```
-
-- `MyFirstTweet` トークンの名前
-- `MFT` トークンのシンボル
-- `http://www.url.to/metadata/` json ファイルの格納場所
+### 2.2. メタデータ json の作成とアップロード
 
 メタデータの json ファイルを作成して、外部からアクセス可能な Web ストレージにアップロードしてください。
 また、同じく画像もアップロードしてください。
