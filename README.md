@@ -53,7 +53,7 @@ TOKEN_BASE_URI=http://www.url.to/metadata/
 {
     "name": "My special item",
     "description": "This is most rare item in the world.",
-    "image": "https://www.url.to/picture-of-item.png",
+    "image": "https://www.url.to/picture-of-item.png"
 }
 ```
 
