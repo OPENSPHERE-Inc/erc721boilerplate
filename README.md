@@ -76,6 +76,12 @@ $ yarn test
 
 ## 5. デプロイ
 
+デプロイ前に、アカウントにネットワーク手数料（ガス代）用の Ether が必要となります。
+Rinkeby Test Network の場合は [こちら](https://faucet.rinkeby.io/) で入手できます。
+Mainnet の場合は取引所で購入してください。
+
+Mainnet へのデプロイは、本物の資産からガス代が差し引かれますから十分注意し、自己責任で実行してください。
+
 ```shell
 $ yarn deploy
 ```
